@@ -3,10 +3,12 @@ Advanced Gulp WordPress
 
 An Advanced Gulp Workflow for WordPress themes.
 
+
+
 Features
 --------
 
-- Gulp 
+- Gulp
 - Sass for CSS
 - Auto Image optimization
 - Bower  for assets management
@@ -14,9 +16,10 @@ Features
 - Custom architecture design
 - Theme zip file build with Gulp
 
+
+
 Getting and Installing the Theme
 --------
-
 
 1. Grab a copy of this theme or Clone this theme, E.g. go to the themes folder then run ` git clone https://github.com/ahmadawais/advanced-gulp-wordpress.git`
 
@@ -36,6 +39,19 @@ Getting and Installing the Theme
 
 7. To build an installable zip file of your theme, use command `gulp build` and your project.zip file will be created as well as a `buildTheme` folder, where you can see what was zipped.
 
+
+
 License
 --------
 Neat was released under GPL v2.
+
+
+
+TODO
+--------
+header.php  -->  head.php + header.php
+footer.php  -->  foot.php + footer.php
+bootstrap support footer
+bootstrap support comments
+funny 404
+page-... use explenation
