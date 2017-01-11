@@ -257,24 +257,24 @@ gulp.task('buildImages', function() {
  });
 
 
- // ==== TASKS ==== //
- /**
-  * Gulp Default Task
-  *
-  * Compiles styles, fires-up browser sync, watches js and php files. Note browser sync task watches php files
-  *
- */
 
- // Package Distributable Theme
- gulp.task('build', function(cb) {
+
+ //-----------------//
+ //   MAIN TASKS    //
+ //-----------------//
+
+ // Package Distributable Theme - Just do every thing
+gulp.task('build', function(cb) {
  	runSequence('styles', 'cleanup', 'vendorsJs', 'scriptsJs',  'buildFiles', 'buildImages', 'buildZip','cleanupFinal', cb);
  });
 
+/* Gulp Default Task - There is no need for a special Default so Watch gets called */
+gulp.task('default', ['watch']);
 
- // Watch Task
- gulp.task('default', ['styles', 'vendorsJs', 'scriptsJs', 'images', 'browser-sync'], function () {
- 	gulp.watch('./assets/img/raw/**/*', ['images']);
- 	gulp.watch('./assets/css/**/*.scss', ['styles']);
- 	gulp.watch('./assets/js/**/*.js', ['scriptsJs', browserSync.reload]);
-
- });
+/* Gulp Watch - Compiles styles, fires-up browser sync, watches js and php files. Note browser sync task watches php files */
+gulp.task('watch', ['styles', 'vendorsJs', 'scriptsJs', 'images', 'browser-sync'], function () {
+ gulp.watch('./assets/img/raw/**/*', ['images']);
+ gulp.watch('./assets/css/**/*.scss', ['styles']);
+ gulp.watch('./assets/js/custom/**/*.js', ['scriptsJs', browserSync.reload]);
+ gulp.watch('./assets/js/vendor/**/*.js', ['vendorsJs', browserSync.reload]);
+});
