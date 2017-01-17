@@ -49,9 +49,12 @@ Neat was released under GPL v2.
 
 TODO
 --------
-header.php  -->  head.php + header.php
-footer.php  -->  foot.php + footer.php
-bootstrap support footer
-bootstrap support comments
-funny 404
-page-... use explenation
+- header.php  -->  head.php + header.php
+- footer.php  -->  foot.php + footer.php
+- bootstrap support footer
+- bootstrap support comments
+- funny 404
+- page-... use explenation
+- extra themplates
+- extra theme shortcodes
+- ftp support gulp watch
