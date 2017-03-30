@@ -135,6 +135,6 @@ if (file_exists(dirname(__FILE__).'/assets/functions/custom_functions.php')) {
  *
  * @since 2.0.0
  */
-if (file_exists(dirname(__FILE__).'/assets/functions/wp_bootstap_navwalker.php')) {
-    require_once( dirname(__FILE__).'/assets/functions/wp_bootstap_navwalker.php' );
+if (file_exists(dirname(__FILE__).'/assets/functions/wp_bootstrap_navwalker.php')) {
+    require_once( dirname(__FILE__).'/assets/functions/wp_bootstrap_navwalker.php' );
 }
